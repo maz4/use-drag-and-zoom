@@ -1,7 +1,6 @@
-import useDragAndZoom from "./useDragAndZoom";
-import logo from "./logo.svg";
+import useDragAndZoom from "../src/useDragAndZoom";
 
-function App() {
+function Example() {
   const WIDTH = 600;
   const HEIGHT = 600;
   const MIN_ZOOM = 1;
@@ -23,7 +22,7 @@ function App() {
         style={{
           width: WIDTH,
           height: HEIGHT,
-          backgroundImage: `url(${logo})`,
+          backgroundImage: `url(./logo.svg)`, // your background image
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           backgroundSize: "cover",
@@ -34,4 +33,4 @@ function App() {
   );
 }
 
-export default App;
+export default Example;
