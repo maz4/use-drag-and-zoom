@@ -11,16 +11,14 @@ If you use typescript you will have to define a type of HTMLElement to which the
 
 ## Usage
 
-```js
-const ref =
-  useDragAndZoom <
-  HTMLDivElement >
-  {
-    width: 600,
-    height: 600,
-    minZoom: 1,
-    maxZoom: 2,
-  };
+```ts
+const ref = useDragAndZoom<HTMLDivElement>({
+  width: 600,
+  height: 600,
+  minZoom: 1,
+  maxZoom: 2,
+});
+
 return (
   // parent div
   <div
@@ -43,3 +41,7 @@ interface UseDraggable {
   maxZoom: number;
 }
 ```
+
+### License
+
+MIT

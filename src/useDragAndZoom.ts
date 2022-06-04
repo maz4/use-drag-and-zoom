@@ -1,4 +1,10 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import {
+  MutableRefObject,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 
 interface UseDraggable {
   width: number;
@@ -12,7 +18,7 @@ const useDragAndZoom = <T extends HTMLElement>({
   height,
   minZoom,
   maxZoom,
-}: UseDraggable): React.RefObject<T> => {
+}: UseDraggable): MutableRefObject<T> => {
   let SCROLL_SENSITIVITY = 0.0005;
   const [cameraOffset, setCameraOffset] = useState<Record<string, any>>({
     x: 0,
