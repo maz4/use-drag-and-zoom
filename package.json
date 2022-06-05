@@ -1,9 +1,13 @@
 {
   "name": "use-drag-and-zoom",
   "author": "maz4",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "main": "./dist/useDragAndZoom.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maz4/use-drag-and-zoom.git"
+  },
   "keywords": [
     "React Hooks",
     "draggable",
@@ -14,7 +18,7 @@
     "dist"
   ],
   "dependencies": {
-    "react": "^18.1.0",
+    "react": "^18.1.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.4",
