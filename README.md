@@ -42,6 +42,10 @@ interface UseDraggable {
 }
 ```
 
+## Demo
+
+[Codesanbox link ](https://codesandbox.io/s/infallible-mendel-lehmyb?file=/src/App.tsx)
+
 ### License
 
 MIT
